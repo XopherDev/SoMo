@@ -15,7 +15,8 @@ form.addEventListener('submit', function(event) {
       const response = JSON.parse(xhr.responseText);
       // handle the response here
       console.log(response.message);
-      document.getElementById('contactForm').innerHTML = `<p style=\"font-size:40px;\">${response.message}</p>`;
+      document.getElementById('contactForm').innerHTML = `<p style=\"font-size:40px;\">${response.message}</p><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br>`;
     } else if (xhr.readyState === 4 && xhr.status !== 200) {
       // handle the error here
       console.log('Error:', xhr.status);
